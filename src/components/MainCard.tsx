@@ -30,6 +30,7 @@ const Card = styled.div`
 
 const CardImage = styled.img`
   width: 100%;
+  height: 240px;
 `;
 
 const CardTitle = styled.h2`
