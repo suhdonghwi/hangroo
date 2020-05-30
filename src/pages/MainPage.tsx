@@ -1,6 +1,7 @@
 import React from 'react';
-
 import styled from 'styled-components';
+
+import colors from 'assets/colors';
 
 const IntroContainer = styled.div`
   display: flex;
@@ -8,10 +9,11 @@ const IntroContainer = styled.div`
 
 const IntroTitle = styled.h1`
   font-weight: normal;
+  color: ${colors.gray9}
 `;
 
 const IntroParagraph = styled.p`
-
+  color: ${colors.gray6}
 `;
 
 export default function MainPage() {

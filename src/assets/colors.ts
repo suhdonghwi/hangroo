@@ -3,7 +3,7 @@
  *
  *  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 
-export const colors = {
+export default {
   white: '#ffffff',
   black: '#000000',
 
