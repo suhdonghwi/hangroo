@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 import colors from 'assets/colors';
 
+const breakpoint = '867px';
+
 const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
@@ -12,6 +14,10 @@ const HeaderContainer = styled.div`
 
 const IntroContainer = styled.div`
   width: 60%;
+
+  @media only screen and (max-width: ${breakpoint}) {
+    width: 100%;
+  }
 `;
 
 const IntroTitle = styled.h1`
@@ -30,6 +36,10 @@ const IntroParagraph = styled.p`
   color: ${colors.gray6};
   font-size: 1.3rem;
   width: 90%;
+
+  @media only screen and (max-width: ${breakpoint}) {
+    width: 100%;
+  }
 `;
 
 const IntroButton = styled.button`
@@ -49,6 +59,10 @@ const IntroButton = styled.button`
 
 const MainIllust = styled.img`
   width: 40%;
+
+  @media only screen and (max-width: ${breakpoint}) {
+    display: none;
+  }
 `;
 
 export default function MainHeader() {
