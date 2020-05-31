@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 
 import colors from 'assets/colors';
@@ -7,6 +8,7 @@ export interface MainCardProps {
   imageUrl: string;
   cardTitle: string;
   cardDescription: string;
+  linkTo: string;
 }
 
 const breakpoint = '400px';
@@ -64,7 +66,11 @@ export default function MainCard(props: MainCardProps) {
       <CardTitle>{props.cardTitle}</CardTitle>
       <CardDescription>{props.cardDescription}</CardDescription>
 
-      <CardLearnMore>더 알아보기 > </CardLearnMore>
+      <CardLearnMore>
+        <Link to={props.linkTo}>
+          더 알아보기 >
+        </Link>
+      </CardLearnMore>
     </Card>
   );
 }
