@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
 
 import styled from 'styled-components';
 
@@ -48,12 +48,18 @@ const MenuItem = styled(Link)`
   }
 
   &:hover {
+    color: ${colors.gray7};
+  }
+
+  &.current {
     color: ${colors.gray8};
     font-weight: bold;
   }
 `;
 
 export default function NavBar() {
+  const location = useLocation();
+
   const menu = [
     {
       title: "역사",
@@ -71,7 +77,7 @@ export default function NavBar() {
 
   const menuItems = menu.map(
     props => (
-      <MenuItem to={props.linkTo}>
+      <MenuItem to={props.linkTo} className={location.pathname === props.linkTo ? "current" : ""}>
         {props.title}
       </MenuItem>
     )

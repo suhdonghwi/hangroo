@@ -47,7 +47,7 @@ const CardDescription = styled.p`
   margin: 1.2rem 0 1.5rem 0;
 `;
 
-const CardLearnMore = styled.button`
+const CardLearnMore = styled(Link)`
   background: none;
   border: none;
 
@@ -57,6 +57,7 @@ const CardLearnMore = styled.button`
 
   cursor: pointer;
   outline: none;
+  text-decoration: none;
 `;
 
 export default function MainCard(props: MainCardProps) {
@@ -66,10 +67,8 @@ export default function MainCard(props: MainCardProps) {
       <CardTitle>{props.cardTitle}</CardTitle>
       <CardDescription>{props.cardDescription}</CardDescription>
 
-      <CardLearnMore>
-        <Link to={props.linkTo}>
-          더 알아보기 >
-        </Link>
+      <CardLearnMore to={props.linkTo}>
+        더 알아보기 >
       </CardLearnMore>
     </Card>
   );
