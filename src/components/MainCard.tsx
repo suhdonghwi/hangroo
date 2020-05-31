@@ -37,7 +37,7 @@ const CardTitle = styled.h2`
   color: ${colors.gray7};
   font-size: 1.8rem;
 
-  margin: 0;
+  margin: 1rem 0 0 0;
 `;
 
 const CardDescription = styled.p`
