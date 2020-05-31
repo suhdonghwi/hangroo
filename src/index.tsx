@@ -7,6 +7,7 @@ import * as serviceWorker from './serviceWorker';
 
 import MainPage from 'pages/MainPage';
 import PrincipalPage from 'pages/PrincipalPage';
+import PeoplePage from 'pages/PeoplePage';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,6 +15,8 @@ ReactDOM.render(
       <Switch>
         <Route path="/" exact component={MainPage} />
         <Route path="/principal" component={PrincipalPage} />
+        <Route path="/people" component={PeoplePage} />
+
         <Redirect path="*" to="/" />
       </Switch>
     </BrowserRouter>
