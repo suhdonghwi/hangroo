@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
 
 import colors from 'assets/colors';
@@ -74,6 +74,10 @@ const Paragraph = styled.p`
 `;
 
 export default function PrincipalPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   const contents = [
     {
       number: "하나",

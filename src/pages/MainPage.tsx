@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
 
 import MainHeader from 'components/MainHeader';
@@ -41,6 +41,10 @@ const CardContainer = styled.div`
 `;
 
 export default function MainPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   const cardProps: MainCardProps[] = [
     {
       imageUrl: "/illusts/tree.svg",
