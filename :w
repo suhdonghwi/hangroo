@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import MainHeader from 'components/MainHeader';
 import MainCard, {MainCardProps} from 'components/MainCard';
+import NavBar from "components/NavBar";
 
 const breakpoint = '460px';
 
