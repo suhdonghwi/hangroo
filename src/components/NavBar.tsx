@@ -90,7 +90,7 @@ export default function NavBar() {
       <MenuItem 
         key={props.title} 
         to={props.linkTo} 
-        className={location.pathname === props.linkTo ? "current" : ""}
+        className={location.pathname.startsWith(props.linkTo) ? "current" : ""}
       >
         {props.title}
       </MenuItem>

@@ -3,17 +3,25 @@ import styled from 'styled-components';
 
 import colors from 'assets/colors';
 
-const Card = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+import Card from 'assets/styles/Card';
 
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.16);
-  border-radius: 20px;
+interface PeopleCardProps {
+  imageUrl: string;
+  name: string;
+  birth: number;
+  death?: number;
+  description: string;
+}
 
-  padding: 1.3rem 1.8rem;
+const CardImage = styled.img`
 `;
 
-export default function PeopleCard() {
+export default function PeopleCard(props: PeopleCardProps) {
+  return (
+    <Card>
+      <CardImage src={props.imageUrl}/>
+
+    </Card>
+  );
 
 }
