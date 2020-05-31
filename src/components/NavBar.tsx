@@ -77,7 +77,11 @@ export default function NavBar() {
 
   const menuItems = menu.map(
     props => (
-      <MenuItem to={props.linkTo} className={location.pathname === props.linkTo ? "current" : ""}>
+      <MenuItem 
+        key={props.title} 
+        to={props.linkTo} 
+        className={location.pathname === props.linkTo ? "current" : ""}
+      >
         {props.title}
       </MenuItem>
     )

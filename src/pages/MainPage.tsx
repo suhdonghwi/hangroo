@@ -63,7 +63,7 @@ export default function MainPage() {
   ];
 
   const cards = cardProps.map(props =>
-    (<CardContainer> <MainCard {...props} /> </CardContainer>));
+    (<CardContainer key={props.cardDescription}> <MainCard {...props} /> </CardContainer>));
 
   return (
     <Main>
