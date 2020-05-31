@@ -13,6 +13,7 @@ const MainContainer = styled.main`
 
 const ContentList = styled.ol`
   list-style-type: none;
+  padding: 0;
 `;
 
 const ContentItem = styled.li`
@@ -68,7 +69,7 @@ export default function PrincipalPage() {
       number: "셋",
       title: "기본 자음으로부터 파생된 자음들",
       image: "sc3.svg",
-      size: "60%",
+      size: "40%",
       description: "한글에서 기본 자음이 아닌 다른 문자들은, 리을(ㄹ)을 제외하면 모두 기본자에 획을 더한 형태를 가지고 있습니다. 이를 통해서 적은 수의 기본 자음만 알아도 다른 자음을 자연스럽게 유도해낼 수 있으며, 효율적인 학습이 가능합니다."
     },
   ];
