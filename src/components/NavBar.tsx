@@ -5,12 +5,18 @@ import styled from 'styled-components';
 
 import colors from 'assets/colors';
 
+const breakpoint = '400px';
+
 const Nav = styled.nav`
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
 
   box-shadow: 1px 0 15px ${colors.gray5};
+
+  @media only screen and (max-width: ${breakpoint}) {
+    padding: 1rem 1.5rem;
+  }
 `;
 
 const LogoLink = styled(Link)`
@@ -45,6 +51,10 @@ const MenuItem = styled(Link)`
 
   &:not(:first-child) {
     margin-left: 2rem;
+
+    @media only screen and (max-width: ${breakpoint}) {
+      margin-left: 1rem;
+    }
   }
 
   &:hover {
