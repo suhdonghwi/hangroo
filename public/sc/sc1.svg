@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="953.303" height="222" viewBox="0 0 953.303 222">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #343a40;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        stroke: #707070;
+      }
+
+      .cls-3 {
+        stroke: #d04747;
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        stroke: #6c63ff;
+        stroke-width: 5px;
+      }
+
+      .cls-5 {
+        fill: #343a40;
+        font-size: 150px;
+        font-family: NotoSansKR-Medium, Noto Sans KR;
+        font-weight: 500;
+      }
+    </style>
+  </defs>
+  <g id="그룹_36" data-name="그룹 36" transform="translate(-482.697 -408)">
+    <g id="그룹_31" data-name="그룹 31" transform="translate(-34 3)">
+      <path id="패스_364" data-name="패스 364" class="cls-1" d="M536.157,2307.853s12.031,13.859-37.769,53.608c0,0-2.589,8.681,15.382,10.2,5.5.466,7.191,2.344,6.844,5.019-.635,5.109-11.565,13.1-11.565,13.1s-2.589,14.468,16.753,8.985c0,0,9.29,16.9,11.727-3.807,0,0,26.461-13.707,51.133-7.158s51.743,19.532,57.073,41.767" transform="translate(20 -1890)"/>
+      <path id="패스_365" data-name="패스 365" class="cls-1" d="M606.723,2496.98s-4.752-24.55-45.339-18.016-40.983-10.889-40.983-10.889,11.285-14.453-3.96-28.114c0,0,.792-9.5,16.631-4.554,0,0,4.554-14.849,12.473,4.554,0,0,93.647-56.622,92.855,22.869" transform="translate(20 -1890)"/>
+      <path id="패스_366" data-name="패스 366" class="cls-2" d="M556.97,2445.239" transform="translate(20 -1890)"/>
+      <path id="패스_368" data-name="패스 368" class="cls-2" d="M623.934,2446.465" transform="translate(20 -1890)"/>
+      <g id="그룹_28" data-name="그룹 28" transform="translate(20 -92)">
+        <path id="패스_367" data-name="패스 367" class="cls-3" d="M558.051,2445.239s61.984-34.012,70.97,2.234" transform="translate(0 -1798)"/>
+        <path id="패스_369" data-name="패스 369" class="cls-3" d="M624.921,2445.906l4.266,1.919,2.186-3.573" transform="translate(0 -1798)"/>
+      </g>
+      <g id="그룹_29" data-name="그룹 29">
+        <line id="선_3" data-name="선 3" class="cls-4" x2="50.738" transform="translate(720.5 523.397)"/>
+        <line id="선_4" data-name="선 4" class="cls-4" x2="9" y2="10" transform="translate(764.5 514.5)"/>
+        <line id="선_5" data-name="선 5" class="cls-4" y1="11" x2="9" transform="translate(764.5 521.5)"/>
+      </g>
+      <text id="_" data-name="ㄱ" class="cls-5" transform="translate(806 579)"><tspan x="0" y="0">ㄱ</tspan></text>
+    </g>
+    <g id="그룹_32" data-name="그룹 32" transform="translate(-100 4)">
+      <path id="패스_370" data-name="패스 370" class="cls-1" d="M536.157,2307.853s12.031,13.859-37.769,53.608c0,0-2.589,8.681,15.382,10.2,5.5.466,7.191,2.344,6.844,5.019-.635,5.109-11.565,13.1-11.565,13.1s-2.589,14.468,16.753,8.985c0,0,9.29,16.9,11.727-3.807,0,0,26.461-13.707,51.133-7.158s51.743,19.532,57.073,41.767" transform="translate(612 -1883)"/>
+      <path id="패스_371" data-name="패스 371" class="cls-1" d="M606.723,2496.98s-4.752-24.55-45.339-18.016-40.983-10.889-40.983-10.889,11.285-14.453-3.96-28.114c0,0,.792-9.5,16.631-4.554,0,0,4.554-14.849,12.473,4.554s13.069-41.589,13.069-41.589,13.067-16.036,19.8,19.2,65.336,29.256,65.336,29.256" transform="translate(612 -1891)"/>
+      <text id="_2" data-name="ㄴ" class="cls-5" transform="translate(1398 578)"><tspan x="0" y="0">ㄴ</tspan></text>
+      <g id="그룹_30" data-name="그룹 30" transform="translate(592 -8)">
+        <line id="선_3-2" data-name="선 3" class="cls-4" x2="50.738" transform="translate(720.5 523.397)"/>
+        <line id="선_4-2" data-name="선 4" class="cls-4" x2="9" y2="10" transform="translate(764.5 514.5)"/>
+        <line id="선_5-2" data-name="선 5" class="cls-4" y1="11" x2="9" transform="translate(764.5 521.5)"/>
+      </g>
+      <path id="패스_372" data-name="패스 372" class="cls-3" d="M586.337,2554.42s0,56.624,72.265,47.913" transform="translate(592 -2032)"/>
+      <path id="패스_373" data-name="패스 373" class="cls-3" d="M653.6,2598.406l2.059,1.59,2.707,2.09-4.163,4.948" transform="translate(593 -2032)"/>
+    </g>
+  </g>
+</svg>

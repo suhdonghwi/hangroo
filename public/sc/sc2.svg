@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="543" height="191" viewBox="0 0 543 191">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #343a40;
+        font-size: 100px;
+        font-family: NotoSansKR-Bold, Noto Sans KR;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: #adb5bd;
+        font-size: 25px;
+        font-family: NotoSansKR-Medium, Noto Sans KR;
+        font-weight: 500;
+      }
+    </style>
+  </defs>
+  <g id="그룹_34" data-name="그룹 34" transform="translate(-711 -1093)">
+    <text id="_" data-name="ㆍ" class="cls-1" transform="translate(711 1209)"><tspan x="0" y="0">ㆍ</tspan></text>
+    <text id="_2" data-name="ㅣ" class="cls-1" transform="translate(1147 1209)"><tspan x="0" y="0">ㅣ</tspan></text>
+    <text id="_3" data-name="ㅡ" class="cls-1" transform="translate(929 1209)"><tspan x="0" y="0">ㅡ</tspan></text>
+    <text id="둥근_하늘" data-name="둥근 하늘" class="cls-2" transform="translate(711 1276)"><tspan x="0" y="0">둥근 하늘</tspan></text>
+    <text id="평평한_땅" data-name="평평한 땅" class="cls-2" transform="translate(926 1276)"><tspan x="0" y="0">평평한 땅</tspan></text>
+    <text id="서있는_사람" data-name="서있는 사람" class="cls-2" transform="translate(1133 1276)"><tspan x="0" y="0">서있는 사람</tspan></text>
+  </g>
+</svg>

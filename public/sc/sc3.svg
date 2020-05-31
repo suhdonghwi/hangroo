@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="559" height="369" viewBox="0 0 559 369">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #343a40;
+        font-size: 90px;
+        font-family: NotoSansKR-Bold, Noto Sans KR;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #6c63ff;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g id="그룹_38" data-name="그룹 38" transform="translate(-689 -2513)">
+    <text id="_" data-name="ㄱ " class="cls-1" transform="translate(689 2617)"><tspan x="0" y="0">ㄱ </tspan></text>
+    <g id="그룹_37" data-name="그룹 37" transform="translate(102 2056)">
+      <line id="선_3" data-name="선 3" class="cls-2" x2="50.738" transform="translate(720.5 523.397)"/>
+      <line id="선_4" data-name="선 4" class="cls-2" x2="9" y2="10" transform="translate(764.5 514.5)"/>
+      <line id="선_5" data-name="선 5" class="cls-2" y1="11" x2="9" transform="translate(764.5 521.5)"/>
+    </g>
+    <text id="_2" data-name="ㅋ" class="cls-1" transform="translate(926 2617)"><tspan x="0" y="0">ㅋ</tspan></text>
+    <line id="선_3-2" data-name="선 3" class="cls-2" x2="50.738" transform="translate(824.5 2697.396)"/>
+    <line id="선_4-2" data-name="선 4" class="cls-2" x2="9" y2="10" transform="translate(868.5 2688.5)"/>
+    <line id="선_5-2" data-name="선 5" class="cls-2" y1="11" x2="9" transform="translate(868.5 2695.5)"/>
+    <text id="_3" data-name="ㄴ" class="cls-1" transform="translate(691 2735)"><tspan x="0" y="0">ㄴ</tspan></text>
+    <text id="_4" data-name="ㄷ" class="cls-1" transform="translate(928 2735)"><tspan x="0" y="0">ㄷ</tspan></text>
+    <text id="_5" data-name="ㅅ" class="cls-1" transform="translate(691 2853)"><tspan x="0" y="0">ㅅ</tspan></text>
+    <text id="_6" data-name="ㅈ" class="cls-1" transform="translate(928 2853)"><tspan x="0" y="0">ㅈ</tspan></text>
+    <text id="_7" data-name="ㅊ" class="cls-1" transform="translate(1165 2853)"><tspan x="0" y="0">ㅊ</tspan></text>
+    <line id="선_9" data-name="선 9" class="cls-2" x2="50.738" transform="translate(1059.5 2697.396)"/>
+    <line id="선_10" data-name="선 10" class="cls-2" x2="9" y2="10" transform="translate(1103.5 2688.5)"/>
+    <line id="선_11" data-name="선 11" class="cls-2" y1="11" x2="9" transform="translate(1103.5 2695.5)"/>
+    <text id="_8" data-name="ㅌ" class="cls-1" transform="translate(1163 2735)"><tspan x="0" y="0">ㅌ</tspan></text>
+  </g>
+</svg>
