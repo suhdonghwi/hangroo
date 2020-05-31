@@ -5,11 +5,16 @@ import colors from 'assets/colors';
 
 const Nav = styled.nav`
   display: flex;
-  padding: 1.5rem 2.5rem;
+  align-items: center;
+  padding: 1rem 2rem;
+
+  box-shadow: 1px 0 15px ${colors.gray5};
 `;
 
 const LogoImage = styled.img`
-  width: 6rem;
+  width: 4.7rem;
+  height: 1.5rem;
+
   cursor: pointer;
   margin-right: auto;
 `;
@@ -26,11 +31,16 @@ const MenuList = styled.ul`
 
 const MenuItem = styled.li`
   cursor: pointer;
-  margin-left: 2rem;
-  font-size: 1.3rem;
+
+  font-size: 1.2rem;
   color: ${colors.gray6};
 
   transition: color 0.2s;
+
+  &:not(:first-child) {
+    margin-left: 1.7rem;
+  }
+
   &:hover {
     color: ${colors.gray8};
     font-weight: bold;
