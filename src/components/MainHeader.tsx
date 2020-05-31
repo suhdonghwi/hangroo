@@ -53,6 +53,8 @@ const IntroButton = styled.button`
   border: none;
   border-radius: 30px;
 
+  box-shadow: 1px 2px 5px ${colors.gray5};
+
   outline: none;
   cursor: pointer;
 `;
