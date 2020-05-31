@@ -5,10 +5,17 @@ import colors from 'assets/colors';
 
 import NavBar from 'components/NavBar';
 
+const breakpointLarge = '900px';
+const breakpointSmall = '500px';
+
 const MainContainer = styled.main`
   padding: 1rem 0 5rem 0;
   max-width: 55%;
   margin: 0 auto;
+
+  @media only screen and (max-width: ${breakpointLarge}) {
+    max-width: 90%;
+  }
 `;
 
 const ContentList = styled.ol`
@@ -22,11 +29,19 @@ const ContentItem = styled.li`
   align-items: center;
 
   margin-top: 5rem;
+
+  @media only screen and (max-width: ${breakpointLarge}) {
+    margin-top: 2rem;
+  }
 `;
 
 const Title = styled.h1`
   font-weight: 500;
   font-size: 2.5rem;
+
+  @media only screen and (max-width: ${breakpointSmall}) {
+    font-size: 1.75rem;
+  }
 `;
 
 const Numbering = styled.span`
@@ -42,11 +57,20 @@ interface ReferenceImageProps {
 const ReferenceImage = styled.img`
   width: ${(props: ReferenceImageProps) => props.size};
   margin: 1rem 0;
+
+  @media only screen and (max-width: ${breakpointSmall}) {
+    width: 90%;
+  }
 `;
 
 const Paragraph = styled.p`
   color: ${colors.gray6};
   font-size: 1.2rem;
+  font-weight: normal;
+
+  @media only screen and (max-width: ${breakpointSmall}) {
+    font-size: 1rem;
+  }
 `;
 
 export default function PrincipalPage() {
