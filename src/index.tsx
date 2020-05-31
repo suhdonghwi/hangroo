@@ -1,14 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 
 import './index.css';
-import App from './App';
-
 import * as serviceWorker from './serviceWorker';
+
+import MainPage from 'pages/MainPage';
+import PrincipalPage from 'pages/PrincipalPage';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact component={MainPage} />
+        <Route path="/principal" component={PrincipalPage} />
+        <Redirect path="*" to="/" />
+      </Switch>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
