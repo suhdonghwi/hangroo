@@ -34,7 +34,7 @@ const CardImage = styled.img`
 
 const CardTitle = styled.h1`
   color: ${colors.gray8};
-  margin: 0.75rem 0 0 0;
+  margin: 1rem 0 0 0;
 
   font-size: 2rem;
 `;
