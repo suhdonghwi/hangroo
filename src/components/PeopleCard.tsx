@@ -14,7 +14,7 @@ export interface PeopleCardProps {
 }
 
 const Card = styled(CardStyle)`
-  padding: 1.75rem 1.5rem;
+  padding: 2rem 2.25rem;
   width: 250px;
 `;
 
@@ -27,10 +27,21 @@ const CardImage = styled.img`
 `;
 
 const CardTitle = styled.h1`
-  color: ${colors.gray7};
-  margin: 0.75rem 0;
+  color: ${colors.gray8};
+  margin: 0.75rem 0 0 0;
 
   font-size: 2rem;
+`;
+
+const CardBirthDeath = styled.div`
+  color: ${colors.gray6};
+  font-size: 1rem;
+  margin: 0;
+`;
+
+const CardDescription = styled.p`
+  color: ${colors.gray7};
+  margin-bottom: 0;
 `;
 
 export default function PeopleCard(props: PeopleCardProps) {
@@ -38,7 +49,8 @@ export default function PeopleCard(props: PeopleCardProps) {
     <Card>
       <CardImage src={props.imageUrl}/>
       <CardTitle>{props.name}</CardTitle>
-
+      <CardBirthDeath>{props.birth} ~ {props.death}</CardBirthDeath>
+      <CardDescription>{props.description}</CardDescription>
     </Card>
   );
 
