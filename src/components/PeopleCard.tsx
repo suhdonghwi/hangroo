@@ -14,8 +14,14 @@ export interface PeopleCardProps {
 }
 
 const Card = styled(CardStyle)`
-  padding: 2rem 2.25rem;
-  width: 250px;
+  width: 330px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 2rem 1.8rem;
+
+  @media only screen and (max-width: 400px) {
+    width: 300px;
+  }
 `;
 
 const CardImage = styled.img`
@@ -23,7 +29,7 @@ const CardImage = styled.img`
   height: 230px;
 
   border-radius: 10px;
-  border: 2px solid ${colors.gray8};
+  box-shadow: 2px 2px 20px ${colors.gray5};
 `;
 
 const CardTitle = styled.h1`
@@ -36,11 +42,13 @@ const CardTitle = styled.h1`
 const CardBirthDeath = styled.div`
   color: ${colors.gray6};
   font-size: 1rem;
+  font-weight: bold;
+
   margin: 0;
 `;
 
 const CardDescription = styled.p`
-  color: ${colors.gray7};
+  color: ${colors.gray6};
   margin-bottom: 0;
 `;
 
