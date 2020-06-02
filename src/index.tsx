@@ -9,6 +9,9 @@ import MainPage from 'pages/MainPage';
 import PrincipalPage from 'pages/PrincipalPage';
 import PeoplePage from 'pages/PeoplePage';
 
+// @ts-ignore
+import HistoryPage from './pages/HistoryPage.jsx';
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -16,6 +19,7 @@ ReactDOM.render(
         <Route path="/" exact component={MainPage} />
         <Route path="/principal" component={PrincipalPage} />
         <Route path="/people" component={PeoplePage} />
+        <Route path="/history" component={HistoryPage} />
 
         <Redirect path="*" to="/" />
       </Switch>
