@@ -31,7 +31,7 @@ export default function PeoplePage() {
       <MainContainer>
         { PeopleData.map(props => 
           (
-            <CardContainer>
+            <CardContainer key={props.name}>
               <PeopleCard {...props}/>
             </CardContainer>
           )) }
