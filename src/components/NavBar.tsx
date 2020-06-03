@@ -16,6 +16,7 @@ const Nav = styled.nav<Darkable>`
   align-items: center;
   padding: 1rem 2rem;
 
+  transition: all 0.3s;
   box-shadow: 1px 0 15px ${props => props.isDark ? colors.gray9 : colors.gray5};
   background-color: ${props => props.isDark ? colors.gray9 : 'white'};
   z-index: 99;
@@ -54,6 +55,7 @@ const MenuItem = styled(Link)<Darkable>`
   cursor: pointer;
 
   font-size: 1.2rem;
+  transition: all 0.3s;
   color: ${props => props.isDark ? colors.gray2 : colors.gray6};
 
   transition: color 0.2s;
