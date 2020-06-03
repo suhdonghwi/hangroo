@@ -7,13 +7,17 @@ import colors from 'assets/colors';
 
 const breakpoint = '400px';
 
-const Nav = styled.nav`
+interface Darkable {
+  isDark: boolean;
+}
+
+const Nav = styled.nav<Darkable>`
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
 
-  box-shadow: 1px 0 15px ${colors.gray5};
-  background-color: white;
+  box-shadow: 1px 0 15px ${props => props.isDark ? colors.gray9 : colors.gray5};
+  background-color: ${props => props.isDark ? colors.gray9 : 'white'};
   z-index: 99;
 
   position: fixed;
@@ -46,11 +50,11 @@ const MenuList = styled.ul`
 
 `;
 
-const MenuItem = styled(Link)`
+const MenuItem = styled(Link)<Darkable>`
   cursor: pointer;
 
   font-size: 1.2rem;
-  color: ${colors.gray6};
+  color: ${props => props.isDark ? colors.gray2 : colors.gray6};
 
   transition: color 0.2s;
   text-decoration: none;
@@ -64,16 +68,20 @@ const MenuItem = styled(Link)`
   }
 
   &:hover {
-    color: ${colors.gray7};
+    color: ${props => props.isDark ? colors.indigo3 : colors.gray7};
   }
 
   &.current {
-    color: ${colors.gray8};
+    color: ${props => props.isDark ? colors.indigo4 : colors.gray8};
     font-weight: bold;
   }
 `;
 
-export default function NavBar() {
+interface NavBarProps {
+  isDark: boolean;
+}
+
+export default function NavBar({isDark}: NavBarProps) {
   const location = useLocation();
 
   const menu = [
@@ -96,6 +104,7 @@ export default function NavBar() {
       <MenuItem 
         key={props.title} 
         to={props.linkTo} 
+        isDark={isDark}
         className={location.pathname.startsWith(props.linkTo) ? "current" : ""}
       >
         {props.title}
@@ -104,9 +113,9 @@ export default function NavBar() {
   );
 
   return (
-    <Nav>
+    <Nav isDark={isDark}>
       <LogoLink to="/">
-        <LogoImage src="/logo.png" />
+        <LogoImage src={isDark ? "/logoWhite.png" : "/logoBlack.png"} />
       </LogoLink>
 
       <MenuList>

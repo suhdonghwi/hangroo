@@ -118,7 +118,7 @@ export default function PrincipalPage() {
   )
   return (
     <>
-      <NavBar />
+      <NavBar isDark={false}/>
       <MainContainer>
         <ContentList>
           {contentElements}

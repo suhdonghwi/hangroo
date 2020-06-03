@@ -27,7 +27,7 @@ export default function PeoplePage() {
 
   return (
     <>
-      <NavBar />
+      <NavBar isDark={false}/>
       <MainContainer>
         { PeopleData.map(props => 
           (
