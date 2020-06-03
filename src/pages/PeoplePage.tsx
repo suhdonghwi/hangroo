@@ -12,7 +12,7 @@ const MainContainer = styled.main`
   justify-content: center;
   flex-wrap: wrap;
 
-  padding: 2rem 5rem;
+  padding: 7rem 5rem;
 `;
 
 const CardContainer = styled.div`

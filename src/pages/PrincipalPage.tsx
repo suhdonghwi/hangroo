@@ -9,7 +9,7 @@ const breakpointLarge = '900px';
 const breakpointSmall = '500px';
 
 const MainContainer = styled.main`
-  padding: 1rem 0 5rem 0;
+  padding: 3rem 0 5rem 0;
   max-width: 55%;
   margin: 0 auto;
 

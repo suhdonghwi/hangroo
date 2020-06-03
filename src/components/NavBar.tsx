@@ -14,8 +14,11 @@ const Nav = styled.nav`
 
   box-shadow: 1px 0 15px ${colors.gray5};
   background-color: white;
-  position: relative;
   z-index: 99;
+
+  position: fixed;
+  width: 100vw;
+  box-sizing: border-box;
 
   @media only screen and (max-width: ${breakpoint}) {
     padding: 1rem 1.5rem;
