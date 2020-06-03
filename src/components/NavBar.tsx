@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link, useLocation} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 import styled from 'styled-components';
 
@@ -79,23 +79,22 @@ const MenuItem = styled(Link)<Darkable>`
 
 interface NavBarProps {
   isDark: boolean;
+  currentPath: string;
 }
 
-export default function NavBar({isDark}: NavBarProps) {
-  const location = useLocation();
-
+export default function NavBar({isDark, currentPath}: NavBarProps) {
   const menu = [
     {
       title: "역사",
-      linkTo: "/history",
+      linkTo: "/history/",
     },
     {
       title: "원리",
-      linkTo: "/principal",
+      linkTo: "/principal/",
     },
     {
       title: "인물",
-      linkTo: "/people",
+      linkTo: "/people/",
     },
   ];
 
@@ -105,7 +104,7 @@ export default function NavBar({isDark}: NavBarProps) {
         key={props.title} 
         to={props.linkTo} 
         isDark={isDark}
-        className={location.pathname.startsWith(props.linkTo) ? "current" : ""}
+        className={currentPath === props.linkTo ? "current" : ""}
       >
         {props.title}
       </MenuItem>

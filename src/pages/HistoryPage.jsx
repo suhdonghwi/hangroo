@@ -30,14 +30,11 @@ export default function HistoryPage() {
   };
 
   return (
-    <>
-      <NavBar isDark={true}/>
-      <main>
-        <ReactFullpage
-          licenseKey={'OPEN-SOURCE-GPLV3-LICENSE'}
-          render={render}
-        />
-      </main>
-    </>
+    <main>
+      <ReactFullpage
+        licenseKey={'OPEN-SOURCE-GPLV3-LICENSE'}
+        render={render}
+      />
+    </main>
   );
 }

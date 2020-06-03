@@ -26,16 +26,13 @@ export default function PeoplePage() {
   });
 
   return (
-    <>
-      <NavBar isDark={false}/>
-      <MainContainer>
-        { PeopleData.map(props => 
-          (
-            <CardContainer key={props.name}>
-              <PeopleCard {...props}/>
-            </CardContainer>
-          )) }
-      </MainContainer>
-    </>
+    <MainContainer>
+      {PeopleData.map(props =>
+        (
+          <CardContainer key={props.name}>
+            <PeopleCard {...props} />
+          </CardContainer>
+        ))}
+    </MainContainer>
   );
 }

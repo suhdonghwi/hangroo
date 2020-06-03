@@ -117,13 +117,10 @@ export default function PrincipalPage() {
     )
   )
   return (
-    <>
-      <NavBar isDark={false}/>
-      <MainContainer>
-        <ContentList>
-          {contentElements}
-        </ContentList>
-      </MainContainer>
-    </>
+    <MainContainer>
+      <ContentList>
+        {contentElements}
+      </ContentList>
+    </MainContainer>
   );
 }
