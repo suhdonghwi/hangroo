@@ -50,19 +50,19 @@ export default function MainPage() {
       imageUrl: "/illusts/tree.svg",
       cardTitle: "한글의 역사",
       cardDescription: "유구하고 특별한 역사를 가진 한글의 흐름에 대해서 알아봅니다.",
-      linkTo: "/history",
+      linkTo: "/history/",
     },
     {
       imageUrl: "/illusts/science.svg",
       cardTitle: "한글의 원리",
       cardDescription: "한글 창제 과정에서 고려된 과학적, 철학적인 요소들을 심도있게 알아봅니다.",
-      linkTo: "/principal",
+      linkTo: "/principal/",
     },
     {
       imageUrl: "/illusts/people.svg",
       cardTitle: "한글의 인물들",
       cardDescription: "한글이 지금의 자리에 있을 수 있도록 해주신 분들을 기억합니다.",
-      linkTo: "/people",
+      linkTo: "/people/",
     },
   ];
 
