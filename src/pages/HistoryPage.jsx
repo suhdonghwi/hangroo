@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 
 import styled from 'styled-components';
@@ -69,12 +69,14 @@ export default function HistoryPage() {
     },
   ];
 
+  const [year, setYear] = useState(sectionProps[0].year);
+
   const render = () => {
     return (
       <ReactFullpage.Wrapper>
         {
           sectionProps.map(props => (
-            <Section className="section" imageUrl={"/history/" + props.imageUrl}>
+            <Section key={props.imageUrl} className="section" imageUrl={"/history/" + props.imageUrl}>
               <Description>
                 {props.description}
               </Description>
@@ -85,13 +87,18 @@ export default function HistoryPage() {
     );
   };
 
+  const onLeave = (_, dest) => {
+    setYear(sectionProps[dest.index].year);
+  };
+
   return (
     <main>
-      <Year>1443년</Year>
+      <Year>{year}년</Year>
       <ReactFullpage
         licenseKey={'OPEN-SOURCE-GPLV3-LICENSE'}
         render={render}
         verticalCentered={false}
+        onLeave={onLeave}
       />
     </main>
   );

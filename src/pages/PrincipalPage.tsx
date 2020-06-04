@@ -3,8 +3,6 @@ import styled from 'styled-components';
 
 import colors from 'assets/colors';
 
-import NavBar from 'components/NavBar';
-
 const breakpointLarge = '900px';
 const breakpointSmall = '500px';
 
