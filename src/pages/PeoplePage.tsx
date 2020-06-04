@@ -11,6 +11,10 @@ const MainContainer = styled.main`
   flex-wrap: wrap;
 
   padding: 7rem 5rem;
+
+  @media only screen and (max-width: 400px) {
+    padding: 5rem 0;
+  }
 `;
 
 const CardContainer = styled.div`
