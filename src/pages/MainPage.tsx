@@ -55,7 +55,7 @@ export default function MainPage() {
     {
       imageUrl: "/illusts/science.svg",
       cardTitle: "한글의 원리",
-      cardDescription: "한글 창제 과정에서 고려된 과학적, 철학적인 요소들을 심도있게 알아봅니다.",
+      cardDescription: "한글 창제 과정에서 고려된 과학적, 철학적인 요소들을 알아봅니다.",
       linkTo: "/principal/",
     },
     {

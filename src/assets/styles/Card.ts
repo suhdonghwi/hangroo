@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-const breakpoint = '400px';
-
 export default styled.div`
   display: flex;
   flex-direction: column;
@@ -11,10 +9,4 @@ export default styled.div`
   border-radius: 20px;
 
   padding: 1.3rem 1.8rem;
-
-  width: 280px;
-
-  @media only screen and (max-width: ${breakpoint}) {
-    width: 230px;
-  }
 `;

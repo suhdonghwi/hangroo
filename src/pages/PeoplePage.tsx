@@ -12,6 +12,10 @@ const MainContainer = styled.main`
 
   padding: 7rem 5rem;
 
+  @media only screen and (max-width: 1000px) {
+    padding: 7rem 0;
+  }
+
   @media only screen and (max-width: 400px) {
     padding: 5rem 0;
   }

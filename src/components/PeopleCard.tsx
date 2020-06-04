@@ -14,7 +14,7 @@ export interface PeopleCardProps {
 }
 
 const Card = styled(CardStyle)`
-  width: 330px;
+  width: 310px;
   height: 100%;
   box-sizing: border-box;
   padding: 2rem 1.8rem;
