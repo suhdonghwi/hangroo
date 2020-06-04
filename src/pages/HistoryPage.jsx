@@ -17,26 +17,42 @@ const Section = styled.section`
 `;
 
 const Year = styled.h1`
+  margin: 0;
   position: fixed;
+
   left: 50%;
-  top: 25vh;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -80%);
+
   z-index: 1;
 
   width: 100%;
   text-align: center;
 
   color: ${colors.gray1};
-  font-size: 7rem;
+  font-size: clamp(5rem, 10vw, 7rem);
 `;
 
 const Description = styled.p`
-  width: 50%;
+  width: 45%;
   font-size: 1.2rem;
-  color: ${colors.gray2};
+  color: ${colors.gray5};
 
   position: relative;
-  top: 7rem;
+  top: 5rem;
+
+  @media only screen and (max-width: 1200px) {
+    width: 60%;
+  }
+
+  @media only screen and (max-width: 900px) {
+    width: 80%;
+  }
+
+  @media only screen and (max-width: 500px) {
+    top: 7rem;
+    width: 90%;
+  }
 `;
 
 export default function HistoryPage() {
