@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "한그루",
+  "name": "한글 제대로 알기, 한그루",
   "icons": [
     {
       "src": "favicon.ico",
