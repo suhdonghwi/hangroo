@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import colors from 'assets/colors';
@@ -21,6 +21,13 @@ const Card = styled(CardStyle)`
   @media only screen and (max-width: 1000px) {
     width: 230px;
   }
+
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.2);
+  }
 `;
 
 const CardImage = styled.img`
@@ -40,7 +47,7 @@ const CardDescription = styled.p`
   margin: 1.2rem 0 1.5rem 0;
 `;
 
-const CardLearnMore = styled(Link)`
+const CardLearnMore = styled.div`
   background: none;
   border: none;
 
@@ -53,16 +60,22 @@ const CardLearnMore = styled(Link)`
   text-decoration: none;
 `;
 
+const LinkContainer = styled(Link)`
+  text-decoration: none;
+`;
+
 export default function MainCard(props: MainCardProps) {
   return (
-    <Card>
-      <CardImage src={props.imageUrl} />
-      <CardTitle>{props.cardTitle}</CardTitle>
-      <CardDescription>{props.cardDescription}</CardDescription>
+    <LinkContainer to={props.linkTo}>
+      <Card>
+        <CardImage src={props.imageUrl} />
+        <CardTitle>{props.cardTitle}</CardTitle>
+        <CardDescription>{props.cardDescription}</CardDescription>
 
-      <CardLearnMore to={props.linkTo}>
-        더 알아보기 >
-      </CardLearnMore>
-    </Card>
+        <CardLearnMore>
+          더 알아보기 {'>'}
+        </CardLearnMore>
+      </Card>
+    </LinkContainer>
   );
 }
